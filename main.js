@@ -65,8 +65,10 @@
   }
   displayTime();
   let start=document.getElementById('startBtn');
+  
   start.addEventListener('click',function(){
-    timeInterval=setInterval(Timer,1000);
+    if ((hour.value>0||minute.value>0)||(second.value>0)) {
+      timeInterval=setInterval(Timer,1000);
     displayTime();
     start.disabled = true;
     second.disabled = true;
@@ -75,6 +77,10 @@
     minute.style.fontWeight = 'bolder';
     hour.disabled = true;
     hour.style.fontWeight = 'bolder';
+    }else{
+      alert("Time can't flow backwards when you set it to zero ಠಿ_ಠ");
+    }
+    
     let reset=document.getElementById('stopBtn');
     reset.addEventListener('click',function(e) {
         start.disabled=false;
@@ -92,6 +98,7 @@
   });
   
   function hourUp() {
+    
     hour.value++;
   }
   function minuteUp() {
@@ -101,13 +108,19 @@
     second.value++;
   }
   function hourDown() {
-    hour.value--;
+    if (hour.value>0) {
+      hour.value--;
+    }
   }
   function minuteDown() {
-    minute.value--;
+    if (minute.value>0) {
+      minute.value--;
+    }
   }
   function secondDown(){
-    second.value--;
+    if (second.value>0) {
+      second.value--;
+    }
   }
   
   function playTimer() {
