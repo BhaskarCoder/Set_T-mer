@@ -2,7 +2,7 @@
   let minute=document.getElementById('Minute');
   let second=document.getElementById('Second');
   let displayHour=0, displayMin=0, displaySec=0;
-  
+  alert("Developed by Bhaskar Anand");
   function Timer() {
  
     if ((hour.value==0&&minute.value==0)&&(second.value==0)) {
