@@ -1,0 +1,151 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background:#BC8686;
+}
+#container{
+  width:350px;
+  height:160px;
+  border: 4px solid #000000;
+  margin:auto;
+  margin-top:8%;
+  position:relative;
+  background-color: #FFCD94;
+}
+.para{
+  margin:26.5px;
+  margin-top:5px;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+#secPara{
+  position: absolute;
+  right:5px;
+}
+#minPara{
+  position: absolute;
+  left: 110px;
+  
+}
+#hourPara{
+  position: absolute;
+  left:5px;
+}
+input{
+  transform:scale(2,2);
+  height:30px;
+  border:none;
+  background:#FFCD94;
+}
+input:focus{
+  outline: none;
+}
+#Hour{
+  width: 30px;
+  position:absolute;
+  left:40px;
+  top: 40px;
+}
+#onedot{
+  font-size: 50px;
+  position:absolute;
+  left:108px;
+}
+#twodot{
+  font-size: 50px;
+  position:absolute;
+  left:216px;
+}
+#Minute{
+  width: 30px;
+  position:absolute;
+  left:145px;
+  top: 40px;
+}
+#Second{
+  width: 30px;
+  position:absolute;
+  left:265px;
+  top: 40px;
+  
+}
+#buttons{
+margin-top:100px;
+}
+#buttons :hover{
+  outline: none;
+}
+#startBtn{
+  width: 130px;
+  height:60px;
+  font-size:45px;
+  border:2px solid none;
+  border-radius:100px;
+  transform:translate(20px,-24px);
+  color:#000000;
+}
+#stopBtn{
+  width: 130px;
+  height:60px;
+  font-size:45px;
+  border:2px solid none;
+  border-radius:100px;
+  transform:translate(40px,-24px);
+}
+.btn{
+  background-color:#2CACEC;
+}
+.btn:hover{
+  font-weight: bolder;
+  background-color:#00FFE5;
+  
+  
+}
+input[type="number"] {
+  font-size:26px;
+}
+
+.arrowBtn{
+  width: 0;
+height: 0;
+border-left: 25px solid transparent;
+border-right: 25px solid transparent;
+border-top: 50px solid gray;
+background: none;
+transform: scale(.2, .2)
+}
+.UparrowBtn{
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid gray;
+  background: none;
+  transform: scale(.2,.2)
+}
+#up1{
+  transform-origin:110px -235px;
+}
+#down1{
+  transform-origin:43px -150px;
+}
+#up2{
+  transform-origin:110px -235px;
+}
+#down2{
+  transform-origin:43px -150px;
+}
+#up3{
+  transform-origin:125px -235px;
+}
+#down3{
+  transform-origin:58px -150px;
+}
+.UparrowBtn:hover{
+  background:#FFFFFF;
+}
+.arrowBtn:hover{
+  background: #FFFFFF;
+}
