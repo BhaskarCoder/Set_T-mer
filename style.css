@@ -149,3 +149,16 @@ transform: scale(.2, .2)
 .arrowBtn:hover{
   background: #FFFFFF;
 }
+
+#pause{
+  width: 60px;
+  height:60px;
+  border: 1px solid none;
+  border-radius:30px;
+  background-color:#BC8686;
+  font-size:30px;
+  transform: translate(150px,10px);
+}
+#pause:hover{
+  outline: none;
+}
